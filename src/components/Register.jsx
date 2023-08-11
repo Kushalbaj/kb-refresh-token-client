@@ -23,7 +23,7 @@ function Register() {
     const [password, setPassword] = useState("");
 
     const register = () => {
-        axios.post('http://localhost:3000/api/user/register', { username, password })
+        axios.post('https://odd-rose-eagle.cyclic.app/api/user/register', { username, password })
             .then(res => {
                 navigate('/login');
             });
