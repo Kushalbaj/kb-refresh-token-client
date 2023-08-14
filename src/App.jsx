@@ -1,6 +1,6 @@
-import { useState, useContext, useEffect } from 'react'
-import { Routes, Route, useNavigate, Navigate } from 'react-router-dom'
-import { AuthContext, AuthProvider } from './AuthProvider';
+import {useContext} from 'react'
+import { Routes, Route,Navigate } from 'react-router-dom'
+import { AuthContext} from './AuthProvider';
 import Login from './components/Login'
 import Register from './components/Register'
 import TodoList from './components/TodoList'
