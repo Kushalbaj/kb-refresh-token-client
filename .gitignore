@@ -32,3 +32,4 @@ dist-ssr
 #Yarn files
 .yarn
 .yarnrc.yml
+yarn.lock
