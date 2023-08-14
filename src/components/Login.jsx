@@ -23,7 +23,7 @@ function Login() {
     const [password, setPassword] = useState("");
 
     const login = () => {
-        axios.post('https://odd-rose-eagle.cyclic.app/api/user/login', { username, password })
+        axios.post(`${process.env.SERVER_APP_URL}/api/user/login`, { username, password })
             .then(res => {
                 localStorage.setItem('token', res.data.accessToken);
                 logIn(); // sets isLoggedIn state to true

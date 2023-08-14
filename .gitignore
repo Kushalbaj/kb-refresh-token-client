@@ -23,5 +23,13 @@ dist-ssr
 *.sln
 *.sw?
 
+#ENV files
+.env.local
+.env.development
+.env.production
+.env
+
+#Yarn files
 .yarn
 .yarnrc.yml
+yarn.lock
