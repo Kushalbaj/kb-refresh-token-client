@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import axios from 'axios';
 import { Link, Navigate,useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider';
+import './Register.css';
 
 function Register() {
     const { isLoggedIn, logIn } = useContext(AuthContext);
