@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import axios from 'axios';
 import { Link, Navigate,useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider';
-import './Register.css';
+import styles from './Register.module.css';
 
 function Register() {
     const { isLoggedIn, logIn } = useContext(AuthContext);
@@ -31,13 +31,27 @@ function Register() {
     };
 
     return (
-        <div>
-            <h1>Register</h1>
-            <input type="text" placeholder="Username" onChange={e => setUsername(e.target.value)} />
-            <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
-            <button onClick={register}>Register</button>
-            <p>Already have an account? <Link to="/login">Login</Link></p>
-        </div>
+        <div className={styles.container}>
+        <h1 className={styles.heading}>Register</h1>
+        <input
+            type="text"
+            placeholder="Username"
+            className={styles.input}
+            onChange={e => setUsername(e.target.value)}
+        />
+        <input
+            type="password"
+            placeholder="Password"
+            className={styles.input}
+            onChange={e => setPassword(e.target.value)}
+        />
+        <button className={styles.button} onClick={register}>
+            Register
+        </button>
+        <p className={styles.link}>
+            Already have an account? <Link to="/login" className={styles.anchor}>Login</Link>
+        </p>
+    </div>
     );
 }
 
