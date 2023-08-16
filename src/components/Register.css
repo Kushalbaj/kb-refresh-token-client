@@ -4,14 +4,9 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f0f0f0; 
+    background-color: #e9850a; 
 }
 
-
-body{
-    margin: 0;
-    padding: 0;
-}
 
 .heading {
     font-size: 24px;
