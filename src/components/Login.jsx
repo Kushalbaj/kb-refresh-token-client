@@ -37,6 +37,7 @@ function Login() {
             <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
             <button onClick={login}>Login</button>
             <p>Don't have an account? <Link to="/register">Register</Link></p>
+            <p>Forget Password</p>
         </div>
     );
 }
