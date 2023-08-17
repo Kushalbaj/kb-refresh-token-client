@@ -1,18 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-body{
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(120deg,#2980b9, #8e44ad);
-  height: 100vh;
-  overflow: hidden;
-}
-.contain{
+.containerLogin{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -77,7 +63,7 @@ body{
 .pass:hover{
   text-decoration: underline;
 }
-button{
+.buttonLogin{
   width: 100%;
   height: 50px;
   border: 1px solid;
@@ -89,7 +75,7 @@ button{
   cursor: pointer;
   outline: none;
 }
-button:hover{
+.buttonLogin:hover{
   border-color: #2691d9;
   transition: .5s;
 }
