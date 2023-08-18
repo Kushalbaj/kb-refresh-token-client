@@ -32,7 +32,7 @@ function Login() {
     };
 
     return (
-       <div className="contain">
+       <div className="containerLogin">
             <h1 className = "heading">Login</h1>
             <div className = "form">
             <div className="txt_field">
@@ -46,20 +46,12 @@ function Login() {
                 <label>Password</label>
             </div>
             <div className="pass">Forgot Password?</div>
-            <button className = "button" onClick={login}>Login</button>
+            <button className = "buttonLogin" onClick={login}>Login</button>
             <div className="signup_link">
                 <p>Don't have an account? <Link to="/register">Register</Link></p>
             </div>
             </div>
         </div>
-        /* <div class = "center">
-            <h1>Login</h1>
-            <input type="text" placeholder="Username" onChange={e => setUsername(e.target.value)} />
-            <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
-            <button onClick={login}>Login</button>
-            <p>Don't have an account? <Link to="/register">Register</Link></p>
-        </div>
-        */
     );
 }
 export default Login;
