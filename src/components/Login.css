@@ -4,7 +4,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
-  background: white;
+  background: wh
+  ite;
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
 }
@@ -35,7 +36,16 @@
   font-size: 16px;
   pointer-events: none;
   transition: .5s;
-
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
 }
 .txt_field input:focus ~ label,
 .txt_field input:valid ~ label{
