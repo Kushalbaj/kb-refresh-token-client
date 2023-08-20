@@ -36,12 +36,12 @@ function Login() {
             <h1 className = "heading">Login</h1>
             <div className = "form">
             <div className="txt_field">
-                <input type="text" required placeholder="Username" onChange={e => setUsername(e.target.value)}/>
+                <input type="text" required onChange={e => setUsername(e.target.value)}/>
                 <span></span>
                 <label>Username</label>
             </div>
             <div className="txt_field">
-                <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)}/>
+                <input type="password" onChange={e => setPassword(e.target.value)}/>
                 <span></span>
                 <label>Password</label>
             </div>
