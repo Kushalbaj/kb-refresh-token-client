@@ -32,26 +32,31 @@ function Login() {
     };
 
     return (
-      <div className="containerLogin">
-          <h1 className = "heading">Login</h1>
+        <div className="loginBody">
+       <div className="containerLogin">
+            <h1 className = "heading">Login</h1>
             <div className = "form">
-                <div className="txt_field">
-                    <input type="text" required placeholder="Username" onChange={e => setUsername(e.target.value)}/>
-                    <span></span>
-                    <label>Username</label>
-                </div>
-                <div className="txt_field">
-                    <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)}/>
-                    <span></span>
-                    <label>Password</label>
-                </div>
-                <div className="pass">Forgot Password?</div>
-                <button className = "buttonLogin" onClick={login}>Login</button>
-                <div className="signup_link">
-                    <p>Don't have an account? <Link to="/register">Register</Link></p>
-                </div>
+            <div className="txt_field">
+                <label>Username</label>   
+            
+                <input type="text" required placeholder="Enter your username" onChange={e => setUsername(e.target.value)}/>
+                <span></span>
             </div>
-      </div>
+            <div className="txt_field">
+                <label>Password</label>
+            
+                <input type="password" placeholder="Enter your password" onChange={e => setPassword(e.target.value)}/>
+                <span></span>
+                
+            </div>
+            <div className="forgetPassword">Forgot Password?</div>
+            <button className = "buttonLogin" onClick={login}>Login</button>
+            <div className="signup_link">
+                <p>Don't have an account? <Link to="/register">Register</Link></p>
+            </div>
+            </div>
+        </div>
+        </div>
     );
 }
 export default Login;
