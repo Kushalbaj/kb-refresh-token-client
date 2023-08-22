@@ -31,28 +31,34 @@ function Register() {
     };
 
     return (
-        <div className="container">
+        <div className="registerBody">
+        <div className="containerRegister">
         <h1 className="heading">Register</h1>
+        <div className="form">
+        <div className="txt_field">
+            <label>Username</label>
         <input
             type="text"
-            placeholder="Username"
-            className="input"
+            required placeholder="Enter you usertname"
             onChange={e => setUsername(e.target.value)}
         />
+        </div>   
+            <label>Password</label>
         <input
             type="password"
-            placeholder="Password"
-            className="input"
+            placeholder="Enter your password"
+            className="txt_field"
             onChange={e => setPassword(e.target.value)}
         />
-        <button className= "button" onClick={register}>
+        </div>
+        <button className= "buttonRegister" onClick={register}>
             Register
         </button>
-        <p className="link">
-            Already have an account? <Link to="/login" className="anchor">Login</Link>
-        </p>
+        <div className="login_link">
+            <p>Already have an account? <Link to="/login">Login</Link></p>
+    </div>
+    </div>
     </div>
     );
 }
-
 export default Register;
