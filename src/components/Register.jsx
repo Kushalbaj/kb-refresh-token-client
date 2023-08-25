@@ -31,33 +31,29 @@ function Register() {
     };
 
     return (
-        <div className="registerBody">
+    <div className="registerBody">
         <div className="containerRegister">
-        <h1 className="heading">Register</h1>
-        <div className="form">
-        <div className="txt_field">
-            <label>Username</label>
-        <input
-            type="text"
-            required placeholder="Enter you usertname"
-            onChange={e => setUsername(e.target.value)}
-        />
-        </div>   
-            <label>Password</label>
-        <input
-            type="password"
-            placeholder="Enter your password"
-            className="txt_field"
-            onChange={e => setPassword(e.target.value)}
-        />
+            <h1 className="heading">Register</h1>
+            <div className="form">
+                <div className="txt_field">
+                    <label>Username</label>
+                <input
+                    type="text"
+                    required placeholder="Enter you usertname"
+                    onChange={e => setUsername(e.target.value)}
+                />
+                </div>
+                <div className="txt_field">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" onChange={e => setPassword(e.target.value)}/>
+                    <span></span>
+                </div>
+                <button className= "buttonRegister" onClick={register}>Register</button>
+            </div>
+            <div className="login_link">
+                <p>Already have an account? <Link to="/login">Login</Link></p>
+            </div>
         </div>
-        <button className= "buttonRegister" onClick={register}>
-            Register
-        </button>
-        <div className="login_link">
-            <p>Already have an account? <Link to="/login">Login</Link></p>
-    </div>
-    </div>
     </div>
     );
 }
