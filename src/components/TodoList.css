@@ -91,11 +91,11 @@
 .todo-create--input {
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px;
     font-size: 16px;
-    color: #333;
+    color: #000000;
     transition: border-color 0.3s ease;
     width: 82%;
+    background-color: #fff;
   }
   
   .todo-create--input:hover,
