@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { AuthContext } from '../AuthProvider';
+import './TodoList.css';
 
 function TodoList() {
     const [todos, setTodos] = useState([]);
@@ -45,21 +46,41 @@ function TodoList() {
     };
 
     return (
-        <div>
-            <h2>Welcome {username}</h2>
-            <nav>{isLoggedIn && <button onClick={logOut}>Log Out</button>}</nav>
-            <h1>Todos</h1>
-            <input value={newTodo} onChange={e => setNewTodo(e.target.value)} />
-            <button onClick={addTodo}>Create</button>
-            {todos.map((todo, index) => (
-                <div key={index}>
-                    <p>{todo.content}</p>
-                    <p>Created at - {new Date(todo.timestamp).toLocaleDateString()}</p>
-                    <button><Link to={`/update/${todo._id}`}>Update</Link></button>
-                    <button onClick={() => deleteTodo(todo._id)}>Delete</button>
+        <> 
+            <div className="container-todo">
+            <nav className="navbar">
+                <h1 className="navbar-brand">Todo List</h1>
+                <div className="navbar-nav">
+                    <Link to="/" className="nav-link">Home</Link>
+                    {isLoggedIn && <button className="nav-btn" onClick={logOut}>Log Out</button>}
                 </div>
-            ))}
+            </nav>
+            <div className="card-todo--create">
+                <h2>Start making list of todo {username}</h2>
+                <div>
+                    <input className='todo-create--input' value={newTodo} onChange={e => setNewTodo(e.target.value)} />
+                    <button className="create-button" onClick={addTodo}>Create</button>
+                </div>
+            </div>
+            <div className="card-todo--list">
+            <h2>Your Todo List</h2>
+                {todos.map((todo, index) => (
+                    <div className="todo-list" key={index}>
+                        <p className='todo-list--content'>{todo.content}</p>
+                        <p className='todo-list--date'>Created at - {new Date(todo.timestamp).toLocaleDateString()}</p>
+                        <div className="buttons-container">
+                            <button className="update-button"><Link className='update-button--link' to={`/update/${todo._id}`}>Update</Link></button>
+                            <button className="delete-button" onClick={() => deleteTodo(todo._id)}>Delete</button>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            <footer>
+                <p>© 2023 Todo List. All rights reserved.</p>
+                <p>Made with ❤️ by {username}.</p>
+            </footer>
         </div>
+        </>
     );
 }
 export default TodoList;
