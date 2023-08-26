@@ -6,7 +6,7 @@
     background-color: #af0606;
   }
   
-  .not-found-content {
+  .not-found--content {
     text-align: center;
     background-color: #fff;
     padding: 100px;
@@ -14,30 +14,30 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  h1 {
+  .not-found--heading {
     font-size: 90px;
     margin-bottom: 10px;
     color: #e74c3c;
   }
   
-  p {
+  .not-found--content-p {
     font-size: 25px;
     margin-bottom: 20px;
     font-weight: bold;
   }
   
-  a {
+  .not-found--a {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
     transition: color 0.3s ease;
   }
   
-  a:hover {
+  .not-found--a:hover {
     color: #2980b9;
   }
   
-  button {
+  .not-found--btn {
     background-color: #007bff;
     border: none;
     border-radius: 5px;
@@ -49,6 +49,6 @@
     transition: background-color 0.3s ease;
   }
   
-  button:hover {
+  .not-found--btn:hover {
     background-color: #0069d9;
   }
