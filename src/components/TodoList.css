@@ -1,0 +1,157 @@
+.container-todo {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    margin: 0;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 20px;
+    cursor: pointer;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.nav-btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #0062cc;
+  }
+
+.card-todo--create {
+    background-color: #dd9393;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.card-todo--list {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+.todo-list {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.todo-list--content {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+.todo-list--date {
+    font-size: 14px;
+    color: #999;
+}
+.todo-create--input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000000;
+    transition: border-color 0.3s ease;
+    width: 82%;
+    background-color: #fff;
+  }
+  
+  .todo-create--input:hover,
+  .todo-create--input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .todo-create--input::placeholder {
+    color: #999;
+  }
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.create-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-left: 10px; 
+}
+
+.update-button {
+    background-color: #ffc107;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 10px 20px;
+}
+.update-button--link {
+    text-decoration: none;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
