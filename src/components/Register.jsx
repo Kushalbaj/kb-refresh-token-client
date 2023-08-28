@@ -39,7 +39,7 @@ function Register() {
                     <label>Username</label>
                 <input
                     type="text"
-                    required placeholder="Enter you username"
+                    required placeholder="Enter your username"
                     onChange={e => setUsername(e.target.value)}
                 />
                 </div>
