@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate,  } from 'react-router-dom';
+import'./UpdateTodo.css';
 
 function UpdateTodo() {
     const [todo, setTodo] = useState("");
@@ -28,10 +29,12 @@ function UpdateTodo() {
     };
 
     return (
-        <div>
-            <h1>Update Todo</h1>
-            <input type="text" value={todo} onChange={e => setTodo(e.target.value)} />
-            <button onClick={updateTodo}>Update</button>
+        <div className="updateTodoBody">
+            <div className = "containerUpdate">
+                <h1 className = "headingUpdate">Update Todo</h1>
+                <textarea className = "textarea" rows="6" cols="50" name="comment" form="usrform" value={todo} onChange={e => setTodo(e.target.value)}> </textarea>
+                <button className = "buttonUpdate" onClick = {updateTodo}>Update</button>
+            </div>
         </div>
     );
 }
