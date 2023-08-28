@@ -33,5 +33,6 @@ dist-ssr
 .yarnrc.yml
 yarn.lock
 
+# Pnpm files
 .pnp.cjs
 .pnp.loader.mjs
