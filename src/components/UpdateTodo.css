@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+/* Styling for the background */
+.updateTodoBody{
+    height: 100vh;
+    background-color: #2691d9;
+}
+
+/* Styling for the container */
+.containerUpdate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling for the heading */
+.headingUpdate {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the input field */
+.textarea {
+width: 90%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
+/* Styling for the button */
+.buttonUpdate {
+padding: 10px 20px;
+background-color: #2691d9;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #0056b3;
+}
